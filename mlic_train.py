@@ -14,9 +14,6 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Flatten, Dense
 from tensorflow.keras.utils import to_categorical
 
-# Train the model
-
-
 # pre processing
 (X_train, y_train), (X_val, y_val) = cifar10.load_data()
 # rgb pixel values are between 0 and 255, divide by 255 to get values from 0-1, better for neural network
@@ -37,4 +34,3 @@ model = Sequential([
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 model.fit(X_train, y_train, batch_size=64, epochs=10, validation_data=(X_val, y_val))
 model.save('cifar10_model.h5')
-
