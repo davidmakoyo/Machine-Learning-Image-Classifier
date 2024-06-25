@@ -42,7 +42,7 @@ def main():
     else:
         st.text('You have not uploaded an image yet.')
     
-    st.markdown("### [GitHub Repo](https://github.com/davidmakoyo/Machine-Learning-Image-Classifier)")
+    st.markdown("### [GitHub](https://github.com/davidmakoyo/Machine-Learning-Image-Classifier)")
 
 if __name__ == '__main__':
     main()
